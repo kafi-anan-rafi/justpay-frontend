@@ -5,10 +5,10 @@ import Navbar from './Navbar';
 
 export default function Layout({ children }) {
   return (
-    <div className={styles.description}>
-      <Header />
+    <div className=''>
+      <Header title={"Payment Made Easier!"} />
       <Navbar />
-      <main>{children}</main>
+      <main className='container mx-auto px-4'>{children}</main>
       <Footer />
     </div>
   )

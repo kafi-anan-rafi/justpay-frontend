@@ -1,10 +1,10 @@
 import Head from 'next/head';
 
-export default function Header() {
+export default function Header({title}) {
   return (
     <>
       <Head>
-        <title>JustPay - Payment Made Easier!</title>
+        <title>JustPay | {title}</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
       </Head>
     </>
