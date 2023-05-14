@@ -8,6 +8,7 @@ export default function Navbar() {
       <nav className="sticky bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="http://localhost:4000/" className="flex items-center">
+          <img src="/logo.png" class="h-8 mr-3" alt="JustPay Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JustPay</span>
           </a>
           <div className="flex md:order-1">
