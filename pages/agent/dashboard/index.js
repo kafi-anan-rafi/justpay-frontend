@@ -13,20 +13,20 @@ export default function Dashboard() {
   const router = useRouter()
   return (
     // <div className='flex flex-row py-10'>
-    <div className='bg-gray-900 rounded mr-5'>
+    <div className="bg-gray-900">
       <SessionCheck />
-      <h4 className="text-2xl font-bold my-6 text-white text-center">Dashboard</h4>
-      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-blue-800' href={"/agent/dashboard/profile/" + agentId}>Profile</Link>
-      {/* <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-blue-800' href={"/agent/dashboard/updateprofile/" + agentId}>Update Profile</Link> */}
-      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-blue-800' href={"/agent/dashboard/balance/" + agentId}>Balance</Link>
-      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-blue-800' href="/agent/dashboard/cashout">Cashout</Link>
-      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-blue-800' href="/agent/dashboard/cashin">Cashin</Link>
-      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-blue-800' href="/agent/dashboard/withdraw">Withdraw</Link>
-      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-blue-800' href="/agent/dashboard/token">Token</Link>
-      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-blue-800' href="/agent/dashboard/bonus">Bonus</Link>
-      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-blue-800' href="/agent/dashboard/refer">Referel</Link>
-      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-blue-800' href="/agent/dashboard/email">Send Email</Link>
-      <Link className='block mt-2 mb-5 px-3 py-1 text-white text-center hover:bg-blue-800' href="/agent/dashboard/getAgent">Search Agent</Link>
+      <h4 className="text-3xl font-bold my-5 text-center text-transparent bg-clip-text bg-gradient-to-br from-green-500 to-yellow-500">Dashboard</h4>
+      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold' href={"/agent/dashboard/profile/" + agentId}>Profile</Link>
+      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold' href={"/agent/dashboard/updateprofile/" + agentId}>Update Profile</Link>
+      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold hover:bg-rounded' href={"/agent/dashboard/balance/" + agentId}>Balance</Link>
+      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold' href="/agent/dashboard/cashout">Cashout</Link>
+      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold' href="/agent/dashboard/cashin">Cashin</Link>
+      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold' href="/agent/dashboard/withdraw">Withdraw</Link>
+      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold' href="/agent/dashboard/token">Token</Link>
+      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold' href={"/agent/dashboard/bonus/" + agentId}>Bonus</Link>
+      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold' href="/agent/dashboard/refer">Referel</Link>
+      <Link className='block mt-2 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold' href="/agent/dashboard/email">Send Email</Link>
+      <Link className='block mt-2 mb-5 px-3 py-1 text-white text-center hover:bg-yellow-300 hover:text-gray-900 hover:font-bold' href="/agent/dashboard/getAgent">Search Agent</Link>
     </div>
 
     // {/* <div className='basis-full bg-gray-400 rounded'>

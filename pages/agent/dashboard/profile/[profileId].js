@@ -11,12 +11,13 @@ export default function Profile({ agentInfo, id }) {
         <div className='basis-1/4 bg-gray-900 rounded mr-5'>
           <Dashboard />
         </div>
-        <div className='basis-full bg-gray-400 rounded px-10 py-10'>
-          <h2 className='text-3xl font-extrabold mb-5'>Profile</h2>
-          <p>Name: {agentInfo.name}</p>
-          <p>Email: {agentInfo.email}</p>
-          <p>Phone Number: {agentInfo.phone}</p>
-          <p>Address: {agentInfo.address}</p>
+        <div className='basis-full bg-gray-200 rounded px-10 py-10'>
+          <h2 className='text-2xl font-extrabold '>Profile</h2>
+          <img className="w-24 h-24 my-4 rounded shadow-md" src={"http://localhost:3000/agent/getimage/" + agentInfo.filename} alt="Profile picture" width="150" height="150" />
+          <p className="text-1xl font-extrabold">{agentInfo.name}</p>
+          <p className="">{agentInfo.email}</p>
+          <p>{agentInfo.phone}</p>
+          <p>{agentInfo.address}</p>
           <div className="mt-5">
             <Link href={"/agent/dashboard/updateprofile/" + id} className="text-white mt-5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
               Edit Profile

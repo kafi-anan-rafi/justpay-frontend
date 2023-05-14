@@ -30,7 +30,6 @@ export default function Email() {
       setMessage("Email sent successful");
     }
     catch (error) {
-      // router.push('/');
       setMessage("Something went wrong!");
       console.log(error.message);
     }
@@ -42,8 +41,8 @@ export default function Email() {
         <div className='basis-1/4 bg-gray-900 rounded mr-5'>
           <Dashboard />
         </div>
-        <div className='basis-full bg-gray-400 rounded px-10 py-10'>
-          <h2 className='text-4xl font-extrabold mb-5'>Send Email</h2>
+        <div className='basis-full bg-gray-200 rounded px-10 py-10'>
+          <h2 className='text-2xl font-extrabold mb-5'>Send Email</h2>
 
           <form onSubmit={handleSubmit}>
             <p className="mt-2 text-xs text-blue-600"> <span className="font-medium">{message}</span></p>
